@@ -4,7 +4,6 @@
 import sys
 
 a = input()
-
 lis = a.split()
 
 for line in lis :
