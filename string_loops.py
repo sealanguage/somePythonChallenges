@@ -1,19 +1,17 @@
 if __name__ == "__main__":
     T = int(input())
     S = input()
-    string = S
-    print(T)
-    # for letter in range(S):
-    #         print(letter)
+    splits = S.split()
 
-    # for word in T :
-    # print(word)
+    # trying to get the second string in the input-not working
+    for split in splits:
+        print(split)
 
     # use slice [] operator to iterate every other letter
-    for letter in string[::2]:
+    for letter in split[::2]:
         print(letter, end="")
     # use slice [] operator to get the missing letters
-    for letter in string[1::2]:
-
+    print(end=" ")
+    for letter in split[1::2]:
         print(letter, end="")
 
