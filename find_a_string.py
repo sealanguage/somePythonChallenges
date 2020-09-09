@@ -6,8 +6,11 @@ def count_substring(string, sub_string):
     for i in range(0, len(string)):
         print(string[i])
         # return
-    for j in range(0, len(sub_string)):
+    for j in sub_string:
         print(j)
+
+    # string = input().strip()    strip() when empty removes leading/trailing spaces
+    # sub_string = input().strip()
 
 
 if __name__ == "__main__":
