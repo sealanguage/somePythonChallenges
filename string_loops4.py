@@ -3,8 +3,14 @@ if __name__ == "__main__":
     # a, b = input("Enter two of your lucky number: ").split()
     T = int(input())
     S = input()
+    #  loop grab input run it and then grab the next
+    splits = S.split()
 
-    splits = input().split()
+    print("The original string is : " + S)
+
+    S = input()
+    #  loop grab input run it and then grab the next
+    splits = S.split()
 
     print("The original string is : " + S)
 
