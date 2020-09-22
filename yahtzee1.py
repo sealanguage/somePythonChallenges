@@ -1,20 +1,35 @@
 import random
-from operator import setitem
 
-# numdie = int(input("How many die to roll?"))
-numdie = 5
-dice = []  # limit to 5 max dice
-# roll = random.randint(1, 5)
+# from operator import setitem
 
-for roll in range(numdie):
-    roll = random.randint(1, 6)
-    dice.append(roll)
-print("First roll: ", dice)
+dice = []
+reroll = []
+dienums = random.randint(1, 6)
+all_dice = 5
 
-#  reroll just 1st die
-reroll_die = []
-reroll = int(input("Die to reroll: "))
 
-# operator.setitem(a, b, c)    Set the value of a at index b to c.
-dice.insert(reroll, roll)  #  (i, elem) i = index   elem = replace with this
-print("dice ", dice)
+for value in range(all_dice):
+    dice.append(random.randint(1, 6))
+
+print (dice)
+
+shopList = []
+maxLengthList = 6
+while len(shopList) < maxLengthList:
+    item = input("Enter your Item to the List: ")
+    shopList.append(item)
+print "That's your Shopping List"
+print (shopList)
+
+
+# n = int(input("reroll which sep by space? "))
+# reroll = n.split()
+# print(reroll)
+
+# for value in range(reroll):
+#     reroll.append(n)
+
+# print(reroll)
+dice[n] = random.randint(1, 6)
+
+print (dice)
