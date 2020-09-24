@@ -5,7 +5,7 @@ print("list is; ", list)
 
 change = int(input("number change at index : "))
 
-list[change] = random.randint(10, 15)
+list[change] = random.randint(10, 15)  # randint(low value, high value)
 print("new list: ", list)
 
 change_many = int(input("number change at index separate with space : "))
